@@ -119,12 +119,6 @@ class Income_Page(BasePage):
                     f"{graph}")
         return self.find_element(graph)
 
-    def my_income_not_graph(self):
-        self.find_element(sum_button).click()
-        self.find_element(delete).click()
-        self.find_element(confirmation).click()
-        sleep(5)
-        return self.find_element(graph)
 
     def delete_income(self):
         self.find_element(card).click()

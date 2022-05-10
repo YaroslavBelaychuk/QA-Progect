@@ -24,4 +24,4 @@ def account(driver):
     tabs = driver.window_handles
     driver.switch_to.window(tabs[1])
     login_page.login_and_password()
-    # login_page.end_subscription()
+

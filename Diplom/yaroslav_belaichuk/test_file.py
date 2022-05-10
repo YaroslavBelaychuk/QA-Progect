@@ -21,10 +21,6 @@ def test_income_graph(driver, account):
     income_page = Income_Page(driver)
     assert income_page.my_income_graph().is_displayed()
 
-# def test_income_not_graph(driver, account):
-#     income_page = Income_Page(driver)
-#     assert income_page.my_income_not_graph().is_displayed() is False
-
 def test_add_account(driver, account):
     new_account_page = New_Account_Page(driver)
     assert ("БЕЛАРУСБАНК", "2 000 BYN") == new_account_page.add_a_bank_account()

@@ -52,14 +52,7 @@ class BasePage:
             message=f"Can't find element by locator"
                     f"{another_version_of_the_site}")
         self.find_element(another_version_of_the_site).click()
-        # WebDriverWait(self.driver, 15).until(
-        #     EC.element_to_be_clickable(end_of_subscription),
-        #     message=f"Can't find element by locator"
-        #             f"{end_of_subscription}")
 
-
-    # def end_subscription(self):
-    #     self.find_element(end_of_subscription).click()
 
 
 
